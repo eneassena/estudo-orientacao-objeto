@@ -7,18 +7,27 @@ public class Gato extends Animal {
 		return corPelo;
 	}
 
- 
 	public Gato(String nome, int totalPatas, int idade) {
 		super(nome, totalPatas, idade);
+		super.setEspecie("Gato");
 	}
 	
 	public Gato(String nome) {
-		super(nome); 
+		super(nome);
+		super.setEspecie("Gato");
 	}
 	
 	public Gato(String nome, String CorPelo) {
 		super(nome);
 		this.corPelo = CorPelo;
+		super.setEspecie("Gato");
+	}
+	
+	@Override
+	public void emitirBarulho() {
+		if(super.estaVivo) 
+			System.out.println("Barulho do " + this.getEspecie());
+		else System.out.println("Animal "+this.getEspecie()+" Falecido");
 	}
 	
 	

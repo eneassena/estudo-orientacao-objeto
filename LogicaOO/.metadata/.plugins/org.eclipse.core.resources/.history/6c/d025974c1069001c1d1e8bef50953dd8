@@ -1,0 +1,36 @@
+package br.com.treinaweb.zoologico.classes;
+
+public class Gato extends Animal {
+	public String corPelo;
+
+	public String getCorPelo() {
+		return corPelo;
+	}
+
+	public Gato(String nome, int totalPatas, int idade) {
+		super(nome, totalPatas, idade);
+		super.setEspecie("Gato");
+	}
+	
+	public Gato(String nome) {
+		super(nome);
+		super.setEspecie("Gato");
+	}
+	
+	public Gato(String nome, String CorPelo) {
+		super(nome);
+		this.corPelo = CorPelo;
+		super.setEspecie("Gato");
+	}
+	
+	@Override
+	public void emitirBarulho() {
+		if(this.getEspecie() != null) {
+			System.out.println("Barulho do " + this.getEspecie());	
+		}		
+	}
+	
+	
+	
+	
+}

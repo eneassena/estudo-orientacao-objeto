@@ -1,0 +1,22 @@
+package br.com.treinaweb.zoologico.classes;
+
+ 
+public class Cachorro extends Animal {
+	
+	public Cachorro(String nome, int totalPatas, int idade) {
+		super(nome, totalPatas, idade);
+		super.setEspecie("Cachorro");
+	}
+	
+	public Cachorro(String nome) {
+		super(nome);
+		super.setEspecie("Cachorro");
+		
+	}
+
+	@Override
+	public void emitirBarulho() {
+		System.out.println("Barulho do animal");
+		
+	}
+}
