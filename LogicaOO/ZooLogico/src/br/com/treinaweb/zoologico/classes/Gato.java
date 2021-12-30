@@ -31,6 +31,14 @@ public class Gato extends Animal {
 	}
 	
 	
+	// sobrescrita do metodo de acesso getEspecie
+	@Override
+	public String getEspecie()
+	{
+		return getNome() + " é um Gato";
+	}
+	
+	
 	
 	
 }

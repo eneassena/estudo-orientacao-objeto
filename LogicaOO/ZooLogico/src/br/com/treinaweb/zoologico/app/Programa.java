@@ -9,33 +9,45 @@ import br.com.treinaweb.zoologico.classes.Gato;
 import java.util.*;
 import java.lang.reflect.*;
 import br.com.treinaweb.zoologico.classes.Animal;
+import br.com.treinaweb.zoologico.classes.heranca.desafio2.Programador;
+import br.com.treinaweb.zoologico.classes.heranca.desafio3.MeuLivro;
+
 
 
 public class Programa {
 	public static void main(String[] args)
 	{
-		Cachorro pep = new Cachorro("Pepi");
-		Gato xani =new Gato("Xanin", "Marron");
+		
 		Scanner input = new Scanner(System.in);
+		MeuLivro mylivro = new MeuLivro();
+		mylivro.setTitulo("Senhor dos anéis");
+		System.out.println(mylivro.getTitulo());
+		
+		
+//		Programador eu = new Programador("eneas", 26, "PHP");
+//		eu.showInfo();
+		
+//		Cachorro pep = new Cachorro("Pepi");
+//		Gato xani =new Gato("Xanin", "Marron");
 		
 		// informações do cachorro
 		// System.out.println("informe a idade do animal?\n ");
 		// input.nextInt();
-		pep.setIdade(3);
-		pep.morrer();
-		xani.morrer();
+//		pep.setIdade(3);
+//		pep.morrer();
+//		xani.morrer();
 		
 		// System.out.println("informe o total de patas do seu animal?\n ");
 		// input.nextInt();		
-		System.out.print(pep.toString());
-		System.out.println(pep.ehAdulto());
-		pep.emitirBarulho();
+//		System.out.print(pep.toString());
+//		System.out.println(pep.ehAdulto());
+//		pep.emitirBarulho();
 		 
 		// informações do gato
-		xani.setIdade(1);
-		System.out.println(xani.toString());
-		System.out.println(xani.ehAdulto());
-		xani.emitirBarulho();
+//		xani.setIdade(1);
+//		System.out.println(xani.toString());
+//		System.out.println(xani.ehAdulto());
+//		xani.emitirBarulho();
 	}
 	
 	public void exemplo03() {

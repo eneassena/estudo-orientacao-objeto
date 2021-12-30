@@ -1,0 +1,14 @@
+package br.com.treinaweb.zoologico.classes.heranca.desafio3;
+
+/* 
+ * Esse exercicio aborda a utilização de métodos abstratos 
+ * */
+
+public class MeuLivro extends Livro {
+
+	@Override
+	public void setTitulo(String s) {
+		super.titulo = s;
+	}
+
+}

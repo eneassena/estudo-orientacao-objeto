@@ -1,0 +1,10 @@
+package br.com.treinaweb.zoologico.classes.heranca.desafio3;
+
+public class MeuLivro extends Livro {
+
+	@Override
+	void setTitulo(String s) {
+		super.titulo = s;
+	}
+
+}
