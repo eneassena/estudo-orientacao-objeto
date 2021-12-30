@@ -1,0 +1,27 @@
+package br.com.treinaweb.zoologico.app;
+
+
+import br.com.treinaweb.zoologico.classes.Animal;
+
+public class Programa {
+
+	public static void main(String[] args)
+	{
+		Animal cachorro = new Animal();
+		cachorro.setIdade(1);
+		cachorro.setNome("Bolinha");
+		cachorro.setTotalPatas(4);
+		
+//		cachorro.emitirBarulho();
+		boolean animalAdulto = cachorro.ehAdulto();
+
+		System.out.println(animalAdulto);
+		if(animalAdulto) {
+			System.out.println("Animal é Adulto");
+		} else {
+			System.out.println("Animal é não Adulto");
+		}
+	}
+	
+	
+}

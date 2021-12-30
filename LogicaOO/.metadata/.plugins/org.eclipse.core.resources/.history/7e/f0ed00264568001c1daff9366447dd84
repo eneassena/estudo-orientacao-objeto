@@ -1,0 +1,44 @@
+package br.com.treinaweb.zoologico.app;
+
+
+import br.com.treinaweb.zoologico.classes.Animal;
+import br.com.treinaweb.zoologico.classes.desafio1.Pessoa;
+import java.util.*;
+import java.lang.reflect.*;
+
+
+public class Programa {
+
+	public static void main(String[] args)
+	{
+		
+		Pessoa charley = new Pessoa();
+		charley.nome = "Charley Mirrow";
+		charley.idade = 32;
+		
+		Field[] allFields = Pessoa.class.getDeclaredFields();
+		
+		for(int r=0; r < allFields.length; r++) {
+			System.out.println( allFields[row].getName() );
+		}
+		
+		
+//		Animal cachorro = new Animal("Bolinha", 4, 5);
+//		cachorro.setIdade(5);
+//		cachorro.setNome("Bolinha");
+//		cachorro.setTotalPatas(4);
+		
+//		System.out.println("Ola o Animal " + cachorro.getNome() + ", possui " + cachorro.getTotalPatas() + " patas e tem " + cachorro.getIdade() + " anos");
+		
+//		cachorro.emitirBarulho();
+		
+//		if(cachorro.ehAdulto()) {
+//			System.out.println("Animal é Adulto");
+//		} else {
+//			System.out.println("Animal é não Adulto");
+//		}
+		
+	}
+	
+	
+}

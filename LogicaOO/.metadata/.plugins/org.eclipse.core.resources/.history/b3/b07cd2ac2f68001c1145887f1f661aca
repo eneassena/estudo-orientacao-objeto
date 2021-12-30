@@ -1,0 +1,13 @@
+package br.com.treinaweb.zoologico.classes;
+
+public class Animal {
+	public String nome;
+	public int total_patas;
+	private int idade;
+	
+	
+	
+ 	Animal () {
+		System.out.println("instancia de class Animal criada");
+	}
+}

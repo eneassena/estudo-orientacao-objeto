@@ -1,0 +1,15 @@
+package br.com.treinaweb.zoologico.classes;
+
+ 
+public class Cachorro extends Animal {
+	
+	Cachorro(String nome, int totalPatas, int idade) {
+		this.setNome(nome);
+		this.setTotalPatas(totalPatas);
+		this.setIdade(idade);
+	}
+	
+	Cachorro(String nome) {
+		this.setNome(nome);
+	}
+}

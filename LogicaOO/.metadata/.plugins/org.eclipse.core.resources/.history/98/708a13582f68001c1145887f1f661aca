@@ -1,0 +1,16 @@
+package br.com.treinaweb.zoologico.classes;
+
+//import br.com.treinaweb.zoologico.classes.Animal;
+
+
+public class Main {
+	
+	public static void main(String args[]) {
+		Animal a;
+		a = new Animal();
+		a.nome = 'Princesa';
+		a.total_patas = 4;
+		
+		System.out.printf("%s", a.nome);
+	}
+}

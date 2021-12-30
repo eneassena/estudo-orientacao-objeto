@@ -1,0 +1,6 @@
+package br.com.treinaweb.zoologico.app;
+
+ 
+public class Cachorro extends Animal {
+
+}

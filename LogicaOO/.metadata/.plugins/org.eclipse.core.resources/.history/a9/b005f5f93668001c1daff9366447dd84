@@ -1,0 +1,18 @@
+package br.com.treinaweb.zoologico.classes;
+
+import java.util.*;
+import java.lang.reflect.*;
+
+
+public class Main {
+	
+	public static void main(String args[]) {
+		 Animal a = new Animal();
+		 a.setNome("Pepi");
+		 a.setTotalPatas(4);
+		 a.setIdade(5);
+		 
+		 System.out.format("%s\n%d\n%d", a.getNome(), a.getTotalPatas(), a.getIdade());
+	}
+	
+}

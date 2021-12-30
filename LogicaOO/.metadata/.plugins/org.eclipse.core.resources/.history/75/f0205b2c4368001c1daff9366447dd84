@@ -1,0 +1,14 @@
+package br.com.treinaweb.zoologico.classes;
+
+ 
+public class Cachorro extends Animal {
+	
+	public boolean ehAdulto() {
+		return super.ehAdulto();
+	}
+	
+	public void emitirBarulho() {
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+package br.com.treinaweb.zoologico.classes;
+
+public class Animal {
+
+	Animal () {
+		System.out.println("instancia de class Animal criada");
+	}
+}
