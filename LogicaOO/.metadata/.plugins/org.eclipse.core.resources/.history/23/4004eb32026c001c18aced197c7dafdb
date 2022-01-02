@@ -1,0 +1,37 @@
+package br.com.treinaweb.zoologico.classes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Veterinario {
+	private String nome;
+	private List<Animal> animais;
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	Veterinario () {
+		animais = new ArrayList<Animal>();
+	}
+	
+	public void atenderAnimal(Animal animal) {
+		animais.add(animal);
+	}
+	
+	public void deixarAtenderAnimal(int indiceAnimal) {
+		animais.remove(indiceAnimal);
+	}
+	
+	public void listarAnimalAtendidos() {
+		System.out.println("animais Atendidos");
+		
+		for(Animal animal: animais) {
+			System.out.println(animal.toString());
+		}
+	}
+}

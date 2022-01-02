@@ -1,0 +1,42 @@
+package br.com.treinaweb.zoologico.classes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Zoologico {
+	private String nome;
+	
+	private List<Animal> animais;
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getNome() {
+		return nome;
+	}	
+	
+	Zoologico() {
+		animais = new ArrayList<Animal>();
+	}
+	
+	public void adicionarAnimal(Animal animalASerAdicionado) {
+		animais.add(animalASerAdicionado);
+	}
+	
+	// remover animal da lista
+	public void removerAnimalDaLista(int indiceDoAnimal) {
+		animais.remove(indiceDoAnimal);
+	}
+	
+	// mostra animais
+	public void listarAnimais() {
+		for(int i=0; i < animais.size(); i ++) {
+			System.out.println(animais);
+		}
+		
+		for(Animal animal: animais) {
+			System.out.println(animal.toString());
+		}
+	}
+	
+}

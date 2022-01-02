@@ -1,0 +1,21 @@
+package br.com.treinaweb.zoologico.classes.interfaces.desafio2;
+
+public class Calculadora implements Aritmetica {
+	
+	private int number;
+	
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	@Override
+	public int fatorial(int number) {
+		
+		
+		return 0;
+	}
+}

@@ -1,0 +1,21 @@
+package br.com.treinaweb.zoologico.classes.interfaces.desafio1;
+
+
+import java.math.*;
+
+
+public class Circulo implements Forma {
+	
+	public double raio;
+	
+	
+	
+	public double area() {
+		
+		
+		
+		return 0;
+	}
+	
+	
+}

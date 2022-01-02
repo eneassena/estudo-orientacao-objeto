@@ -3,12 +3,14 @@ package br.com.treinaweb.zoologico.app;
 
 //import br.com.treinaweb.zoologico.classes.desafio1.Pessoa;
 //import br.com.treinaweb.zoologico.classes.desafio3.Pessoa;
+//import br.com.treinaweb.zoologico.classes.heranca.desafio2.Programador;
+//import br.com.treinaweb.zoologico.classes.heranca.desafio3.MeuLivro;
+//import br.com.treinaweb.zoologico.classes.interfaces.desafio1.Circulo;
 
 import java.util.*;
 import java.lang.reflect.*;
 import br.com.treinaweb.zoologico.classes.*;
-import br.com.treinaweb.zoologico.classes.heranca.desafio2.Programador;
-import br.com.treinaweb.zoologico.classes.heranca.desafio3.MeuLivro;
+import br.com.treinaweb.zoologico.classes.interfaces.desafio2.Calculadora;
 
 
 
@@ -16,6 +18,45 @@ public class Programa {
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
+		Zoologico zoo = new Zoologico();
+		Gato xani = new Gato("Xani", "Marron");
+		Animal cachorro = new Cachorro("Pepi", 4, 3);
+		Veterinario v = new Veterinario();
+		
+		zoo.setNome("Enéas Produções");
+		
+		v.atenderAnimal(xani);
+		v.atenderAnimal(cachorro);
+		v.listarAnimalAtendidos();
+		
+		
+		zoo.adicionarAnimal(xani);
+		zoo.adicionarAnimal(cachorro);
+		zoo.removerAnimalDaLista(1);
+		zoo.listarAnimais();
+		
+		
+	}
+	
+	public void exemplo06() {
+Calculadora c = new Calculadora();
+		
+		/*System.out.println("Number: ");
+		int number = 8;//input.nextInt();
+//		c.fatorial(number);
+		System.out.printf("Fatorial de %d eh %d\n", number, c.fatorial(number));
+//		System.out.printf("%d",c.fatorial(number));*/
+	}
+	public void exemplo05() {
+		/*Circulo c = new Circulo();
+		
+		System.out.println("Raio: ");
+		double raio = input.nextDouble();
+		c.setRaio(raio);
+		 
+		System.out.printf("Area do Circulo eh: %.2f", c.area());*/
+	}
+	public void exemplo04() {
 		// Gato pep = new Gato("Xani", "Marron");
 		
 		// LSP parte 1
@@ -24,8 +65,6 @@ public class Programa {
 		// LSP parte 2
 		Animavel animal = new Cachorro("Pepi", 4, 3);
 		animal.morrer();
-		
-		
 		// informações do cachorro
 		// System.out.println("informe a idade do animal?\n ");
 		//input.nextInt();
@@ -37,11 +76,8 @@ public class Programa {
 		//input.nextInt();		
 		System.out.print(animal.toString());
 		System.out.println(animal.ehAdulto());
-		animal.emitirBarulho();
-		 
- 
+		animal.emitirBarulho();	
 	}
-	
 	public void exemplo03() {
 		
 //		Scanner end = new Scanner(System.in);

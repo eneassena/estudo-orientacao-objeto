@@ -1,0 +1,26 @@
+package br.com.treinaweb.zoologico.classes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Zoologico {
+	private String nome;
+	
+	private List<Animal> animais;
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getNome() {
+		return nome;
+	}	
+	
+	Zoologico() {
+		animais = new ArrayList<Animal>();
+	}
+	
+	public void adicionarAnimal(Animal animalASerAdicionado) {
+		animais.add(animalASerAdicionado);
+	}
+	
+}

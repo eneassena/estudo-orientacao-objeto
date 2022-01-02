@@ -1,0 +1,14 @@
+package br.com.treinaweb.zoologico.classes.interfaces.desafio2;
+
+public class Calculadora implements Aritmetica {
+	
+	@Override
+	public int fatorial(int number) {
+		int fat = 0;
+		for(int n=number; n >= 1; n --) {
+			System.out.println(n);
+		}
+		
+		return fat;
+	}
+}
