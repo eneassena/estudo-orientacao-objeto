@@ -1,0 +1,13 @@
+package br.com.treinaweb.zoologico.classes;
+
+/* 
+ * Por padrão todos os métodos declarados na interface 
+ * são publicos
+ * */
+public interface Animavel {
+
+	Boolean ehAdulto();
+	void emitirBarulho();
+	void morrer();
+
+}

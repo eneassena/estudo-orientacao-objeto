@@ -20,6 +20,12 @@ public class Cachorro extends Animal {
 		else System.out.println("Animal "+this.getEspecie()+" Falecido");
 	}
 	
+	@Override
+	public boolean ehAdulto() {
+		if(super.estaVivo)
+			return super.getIdade() >= 1;
+		return false; 
+	}
 	
 	@Override
 	public void morrer() {
@@ -28,6 +34,6 @@ public class Cachorro extends Animal {
 		 * sua assinatura a palavra chave final o metodo não poderá ser
 		 * reescrita
 		 * */
-		estaVivo = !false;
+		estaVivo = false;
 	}
 }

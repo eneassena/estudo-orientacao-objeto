@@ -24,21 +24,23 @@ public class Gato extends Animal {
 	}
 	
 	@Override
+	public boolean ehAdulto() {
+		if(super.estaVivo) 
+			return super.getIdade() >= 1;
+		return false;
+	}
+	
+	@Override
 	public void emitirBarulho() {
 		if(super.estaVivo) 
 			System.out.println("Barulho do " + this.getEspecie());
 		else System.out.println("Animal "+this.getEspecie()+" Falecido");
 	}
 	
-	
 	// sobrescrita do metodo de acesso getEspecie
 	@Override
 	public String getEspecie()
 	{
-		return getNome() + " é um Gato";
-	}
-	
-	
-	
-	
+		return super.getEspecie();
+	} 
 }
