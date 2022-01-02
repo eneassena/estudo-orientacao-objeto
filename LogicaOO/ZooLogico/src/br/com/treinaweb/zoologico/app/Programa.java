@@ -10,6 +10,8 @@ package br.com.treinaweb.zoologico.app;
 import java.util.*;
 import java.lang.reflect.*;
 import br.com.treinaweb.zoologico.classes.*;
+import br.com.treinaweb.zoologico.classes.desafiofinal.Departamento;
+import br.com.treinaweb.zoologico.classes.desafiofinal.Funcionario;
 import br.com.treinaweb.zoologico.classes.interfaces.desafio2.Calculadora;
 
 
@@ -18,7 +20,23 @@ public class Programa {
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
-		Zoologico zoo = new Zoologico();
+		
+		Departamento dep = new Departamento();
+		
+		
+		dep.adicionarFuncionario(new Funcionario("Ana"));
+		dep.adicionarFuncionario(new Funcionario("Pedro"));
+		dep.adicionarFuncionario(new Funcionario("Eneas"));
+		
+		
+		dep.listarFuncionarios();
+		
+		
+	}
+	
+	
+	public void exemplo07() {
+		/*Zoologico zoo = new Zoologico();
 		Gato xani = new Gato("Xani", "Marron");
 		Animal cachorro = new Cachorro("Pepi", 4, 3);
 		Veterinario v = new Veterinario();
@@ -33,13 +51,11 @@ public class Programa {
 		zoo.adicionarAnimal(xani);
 		zoo.adicionarAnimal(cachorro);
 		zoo.removerAnimalDaLista(1);
-		zoo.listarAnimais();
-		
-		
+		zoo.listarAnimais();*/
 	}
 	
 	public void exemplo06() {
-Calculadora c = new Calculadora();
+		Calculadora c = new Calculadora();
 		
 		/*System.out.println("Number: ");
 		int number = 8;//input.nextInt();
