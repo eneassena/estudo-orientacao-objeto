@@ -1,12 +1,14 @@
 package br.com.treinaweb.zoologico.app;
 
 
+import br.com.treinaweb.zoologico.classes.Cachorro;
+import br.com.treinaweb.zoologico.classes.Gato;
 //import br.com.treinaweb.zoologico.classes.desafio1.Pessoa;
 //import br.com.treinaweb.zoologico.classes.desafio3.Pessoa;
 
 import java.util.*;
 import java.lang.reflect.*;
-import br.com.treinaweb.zoologico.classes.*;
+import br.com.treinaweb.zoologico.classes.Animal;
 import br.com.treinaweb.zoologico.classes.heranca.desafio2.Programador;
 import br.com.treinaweb.zoologico.classes.heranca.desafio3.MeuLivro;
 
@@ -16,30 +18,36 @@ public class Programa {
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
-		// Gato pep = new Gato("Xani", "Marron");
+//		MeuLivro mylivro = new MeuLivro();
+//		mylivro.setTitulo("Senhor dos anéis");
+//		System.out.println(mylivro.getTitulo());
 		
-		// LSP parte 1
-		// Animal animal = new Gato("Pepi", 4, 3);
-
-		// LSP parte 2
-		Animavel animal = new Cachorro("Pepi", 4, 3);
-		animal.morrer();
 		
+//		Programador eu = new Programador("eneas", 26, "PHP");
+//		eu.showInfo();
+		
+		Cachorro pep = new Cachorro("Pepi");
+		Gato xani = new Gato("Xani", "Marron");
 		
 		// informações do cachorro
-		// System.out.println("informe a idade do animal?\n ");
+//		System.out.println("informe a idade do animal?\n ");
 		//input.nextInt();
-		// pep.setIdade(3);
-		// pep.morrer(); 
+		pep.setIdade(3);
+		pep.morrer();
+		xani.morrer();
 		
 		// informações do Cachorro
-		// System.out.println("informe o total de patas do seu animal?\n ");
+//		System.out.println("informe o total de patas do seu animal?\n ");
 		//input.nextInt();		
-		System.out.print(animal.toString());
-		System.out.println(animal.ehAdulto());
-		animal.emitirBarulho();
+		System.out.print(pep.toString());
+		System.out.println(pep.ehAdulto());
+		pep.emitirBarulho();
 		 
- 
+		// informações do gato
+		xani.setIdade(1);
+		System.out.println(xani.toString());
+		System.out.println(xani.ehAdulto());
+		xani.emitirBarulho();
 	}
 	
 	public void exemplo03() {

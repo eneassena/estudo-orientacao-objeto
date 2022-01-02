@@ -16,24 +16,21 @@ public class Programa {
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
-		// Gato pep = new Gato("Xani", "Marron");
-		
+//		Gato pep = new Gato("Xani", "Marron");
 		// LSP parte 1
-		// Animal animal = new Gato("Pepi", 4, 3);
+//		Animal animal = new Gato("Pepi", 4, 3);
 
 		// LSP parte 2
-		Animavel animal = new Cachorro("Pepi", 4, 3);
+		Animavel animal = new Gato("Pepi", 4, 3);
 		animal.morrer();
-		
-		
 		// informações do cachorro
-		// System.out.println("informe a idade do animal?\n ");
+//		System.out.println("informe a idade do animal?\n ");
 		//input.nextInt();
-		// pep.setIdade(3);
-		// pep.morrer(); 
+//		pep.setIdade(3);
+//		pep.morrer(); 
 		
 		// informações do Cachorro
-		// System.out.println("informe o total de patas do seu animal?\n ");
+//		System.out.println("informe o total de patas do seu animal?\n ");
 		//input.nextInt();		
 		System.out.print(animal.toString());
 		System.out.println(animal.ehAdulto());

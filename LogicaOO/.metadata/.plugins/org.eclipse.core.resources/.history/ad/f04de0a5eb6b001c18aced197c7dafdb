@@ -24,7 +24,7 @@ public class Programa {
 		// LSP parte 2
 		Animavel animal = new Cachorro("Pepi", 4, 3);
 		animal.morrer();
-		
+		System.out.println(new Gato().getCorPelo());
 		
 		// informações do cachorro
 		// System.out.println("informe a idade do animal?\n ");

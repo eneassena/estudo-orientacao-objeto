@@ -25,7 +25,6 @@ public class Programa {
 		Animavel animal = new Cachorro("Pepi", 4, 3);
 		animal.morrer();
 		
-		
 		// informações do cachorro
 		// System.out.println("informe a idade do animal?\n ");
 		//input.nextInt();
